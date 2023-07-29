@@ -20,7 +20,11 @@
 ### POST /api/v1/task/new
 
 - Description: Create a new task for the logged-in user.
+-`{
+  "title": "Buy groceries",
+  "description": "Milk, bread, eggs"
+}`
 
 ### GET /api/v1/task/mytask
 
-- Description: Get user-specific tasks.`
+- Description: Get user-specific tasks.
