@@ -4,10 +4,21 @@
 ### POST /api/v1/users/new
 
 - Description: Register a new user by providing their name, email, and password.
+- `
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "securePassword123"
+}`
 
 ### POST /api/v1/users/login
 
 - Description: Log in an existing user with their registered email and password.
+- `
+{
+  "email": "john@example.com",
+  "password": "securePassword123"
+}`
 
 ### GET /api/v1/users/logout
 
