@@ -1,7 +1,7 @@
 # todolist_backend
 ## API Endpoints
 
-### POST /api/v1/users/new
+### POST /users/new
 
 - Description: Register a new user by providing their name, email, and password.
 - `
@@ -11,7 +11,7 @@
   "password": "securePassword123"
 }`
 
-### POST /api/v1/users/login
+### POST /users/login
 
 - Description: Log in an existing user with their registered email and password.
 - `
@@ -20,15 +20,15 @@
   "password": "securePassword123"
 }`
 
-### GET /api/v1/users/logout
+### GET /users/logout
 
 - Description: Log out the current user.
 
-### GET /api/v1/users/me
+### GET /users/me
 
 - Description: Get the user's profile information.
 
-### POST /api/v1/task/new
+### POST /task/new
 
 - Description: Create a new task for the logged-in user.
 -`{
@@ -36,6 +36,6 @@
   "description": "Milk, bread, eggs"
 }`
 
-### GET /api/v1/task/mytask
+### GET /task/mytask
 
 - Description: Get user-specific tasks.
