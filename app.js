@@ -5,6 +5,7 @@ import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import { errorMiddleware } from "./controllers/error.js";
 import cors from "cors";
+import { redirect } from "express";
 
 
 export const app = express();
@@ -28,6 +29,9 @@ app.use("/api/v1/task", taskRouter);
 
 app.get("/", (req, res) => {
     res.send("Nice Working!");
+});
+app.get("*", (req, res) => {
+    res.redirect(301, "https://todolist-frontend-alpha.vercel.app");
 });
 
 // Using Error Middleware
